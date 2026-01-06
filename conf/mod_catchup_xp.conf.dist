@@ -1,0 +1,35 @@
+[worldserver]
+
+########################################
+# CatchupXP module configuration
+#
+# This module allows never player to catch up to higher level players more quickly.
+# XP rates are dynamically adjusted based on how far behind a player is compared to the highest level on the server.
+#
+# # Catch-up XP scaling
+# XP order:
+# 1) Base creature XP
+# 2) AzerothCore rate (Rate.XP.Kill, etc.)
+# 3) Catch-up multiplier (this module)
+
+# Example:
+# Max level: 20
+# Player level: 3
+# Required level diff: 4
+# Max multiplier: 4.0
+# Rate.XP.Kill = 2.0
+
+# Base XP: 36
+# After core rate: 36 * 2.0 = 72
+# After catch-up (~3.57x): 72 * 3.57 ≈ 257 XP
+#
+########################################
+
+# Enable the module (default: 1)
+CatchupXP.Enable = 1
+
+# Levels a player must be behind the max level to receive any catchup XP (default: 5)
+CatchupXP.LevelsBehindForCatchupXP = 5
+
+# The maximum multiplier applied when a player is the furthest behind (level 1) the current highest level (default: 4.0)
+CatchupXP.MaxMultiplier = 4.0
