@@ -1,6 +1,6 @@
-#include "CatchupXPWorldScript.h"
-#include "CatchupXPPlayerScript.h"
-#include "CatchupXPCommandScript.h"
+#include "scripts/CatchupXPWorldScript.h"
+#include "scripts/CatchupXPPlayerScript.h"
+#include "scripts/CatchupXPCommandScript.h"
 
 void AddCatchupXPScripts()
 {
