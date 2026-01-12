@@ -1,9 +1,9 @@
 #include "CatchupXPWorldScript.h"
 #include "ScriptMgr.h"
-#include "ConfigHelper.h"
-#include "DbHelper.h"
-#include "StateHelper.h"
 #include "Define.h"
+#include "../helpers/ConfigHelper.h"
+#include "../helpers/DbHelper.h"
+#include "../helpers/StateHelper.h"
 
 CatchupXP_World::CatchupXP_World() : WorldScript("CatchupXP") {}
 

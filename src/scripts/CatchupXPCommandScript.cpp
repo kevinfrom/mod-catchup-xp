@@ -2,10 +2,9 @@
 #include "ScriptMgr.h"
 #include "ChatCommand.h"
 #include "Chat.h"
-#include "ChatHelper.h"
-#include "Utilities.h"
-#include "StateHelper.h"
 #include "Define.h"
+#include "../helpers/ChatHelper.h"
+#include "../helpers/StateHelper.h"
 
 using namespace Acore::ChatCommands;
 

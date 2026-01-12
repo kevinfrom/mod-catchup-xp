@@ -1,11 +1,18 @@
 #include "Define.h"
 #include "Player.h"
-#include "StateHelper.h"
 #include "ConfigHelper.h"
+
+uint8 currentMaxLvl = 1;
+std::unordered_set<uint8> CatchupXPDisabledPlayers;
 
 uint8 GetPlayerGuid(Player *player)
 {
     return player->GetGUID().GetCounter();
+}
+
+bool PlayerDisabledCatchupXP(Player *player)
+{
+    return CatchupXPDisabledPlayers.contains(GetPlayerGuid(player));
 }
 
 float GetCatchupXPMultiplier(Player *player)

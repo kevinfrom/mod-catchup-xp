@@ -1,10 +1,9 @@
 #include "CatchupXPPlayerScript.h"
 #include "ScriptMgr.h"
-#include "ConfigHelper.h"
-#include "Utilities.h"
-#include "StateHelper.h"
-#include "ChatHelper.h"
 #include "Define.h"
+#include "../helpers/ConfigHelper.h"
+#include "../helpers/StateHelper.h"
+#include "../helpers/ChatHelper.h"
 
 CatchupXP_Player::CatchupXP_Player() : PlayerScript("CatchupXP") {}
 
